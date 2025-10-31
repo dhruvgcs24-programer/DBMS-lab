@@ -2,7 +2,7 @@ create database IF NOT exists 1BF24CS097;
 show databases;
 use 1BF24CS097;
 create table loan(
-loan_number INT,
+loan_number INT primary key,
 branch_name varchar(100),
 ammount decimal(15,2),
 foreign key(branch_name) references branch(branch_name) 
